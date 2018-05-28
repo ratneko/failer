@@ -3,5 +3,5 @@ require 'sinatra/reloader'
 require 'json'
 
 get '/' do
-  'hello world'
+  send_file File.join(settings.public_dir, 'index.html')
 end
