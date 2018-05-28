@@ -2,5 +2,8 @@
   Please post your failure story.
 
 ## Component
-- Ruby
-- etc
+- Ruby => 2.5
+- node => 9.11
+
+## Usage
+- xxxxx
