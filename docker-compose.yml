@@ -11,6 +11,14 @@ services:
     tty: true
     stdin_open: true
 
+  front:
+    build: front
+    volumes:
+      - ./front:/app/front:cached
+      - /app/front/node_modules
+    tty: true
+    stdin_open: true
+
   db:
     image: mysql:5.7
     volumes:
