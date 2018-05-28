@@ -10,5 +10,7 @@ RUN apk update && \
 
 WORKDIR /app
 
-COPY Gemfile Gemfile.lock /app
-RUN bundle
+COPY Gemfile Gemfile.lock ./
+
+RUN gem install bundler
+CMD bundle install
