@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build: .
-    command: bin/rails s
+    command: bundle exec ruby lib/app.rb
     volumes:
       - .:/app:cached
       - /app/vendor
