@@ -5,12 +5,12 @@ RUN apk update && \
     apk add --update --no-cache \
       alpine-sdk \
       tzdata \
-      mysql \
+      mysql-dev \
       nodejs
 
 WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 
-RUN gem install bundler
-CMD bundle install
+RUN gem install bundle && \
+    bundle install
