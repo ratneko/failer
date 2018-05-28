@@ -2,8 +2,15 @@
   Please post your failure story.
 
 ## Component
-- Ruby => 2.5
-- node => 9.11
+- ruby:2.5.1-alpine3.7
+- node:9.11.1-alpine
 
 ## Usage
-- xxxxx
+
+```
+docker-compose build
+docker-compose up
+```
+
+## LICENSE
+Ratneko.Inc
